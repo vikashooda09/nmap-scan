@@ -1,0 +1,11 @@
+I scanned my metasploitable2 virtual machine with ip address "192.168.1.44" for the testing purpose
+Where port 21, 22 and 23 are open which can cause:
+
+Port 21 (FTP): Sends data and passwords in plaintext, risk of sniffing, brute-force, and data leaks.
+
+Port 22 (SSH): Safer, but exposed to brute-force and exploits if weak passwords or outdated software.
+
+Port 23 (Telnet): Very insecure, all traffic is plaintext, easy takeover, often abused by botnets.
+
+Biggest Risk: Remote access takeover.
+Disable Telnet, replace FTP with SFTP/FTPS, and lock down SSH.
